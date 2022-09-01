@@ -2,6 +2,8 @@
 
 Job mécano RageUI V2
 
+Made by evann™
+
 Démarrer les deux ressources dans le server.cfg ou ressources.cfg :
 ensure esx_lscustom
 ensure evMechanicJob
