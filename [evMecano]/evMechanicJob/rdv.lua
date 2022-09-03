@@ -36,25 +36,25 @@ end)
 
 
 Citizen.CreateThread(function()
-    if ESX.PlayerData.job and ESX.PlayerData.job.name == 'mechanic' then
-        while true do
-            RageUI.IsVisible(RMenu:Get("Mecano","Mecano_main"),true,true,true,function()
+        
+
+       while true do
+           RageUI.IsVisible(RMenu:Get("Mecano","Mecano_main"),true,true,true,function()
            
-                RageUI.ButtonWithStyle("Appeller un Mecano", nil, {RightBadge = RageUI.BadgeStyle.Car}, true,function(h,a,s)
-                    if s then
-                        TriggerServerEvent('evJob:AnnonceRdv')
-                        Citizen.Wait(20000)
+               RageUI.ButtonWithStyle("Appeller un Mecano", nil, {RightBadge = RageUI.BadgeStyle.Car}, true,function(h,a,s)
+                   if s then
+                       TriggerServerEvent('evJob:AnnonceRdv')
+                       Citizen.Wait(20000)
 
-                    end
+                   end
             
-                end)
+               end)
 
 
 
 
-            end, function()end, 1)
-            Citizen.Wait(0)
-        end
-    end
-
+           end, function()end, 1)
+           Citizen.Wait(0)
+       end
+ 
 end)
