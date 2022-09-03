@@ -10,6 +10,21 @@ Citizen.CreateThread(function()
 end)
 
 
+--------Blips
+
+
+Citizen.CreateThread(function()
+    local BLIPMECA = AddBlipForCoord(vector3(97.869, -740.351, 45.755))
+    SetBlipSprite(BLIPMECA, 446)
+    SetBlipColour(BLIPMECA, 5)
+    SetBlipScale(BLIPMECA, 1.0)
+    SetBlipAsShortRange(BLIPMECA, true)
+    BeginTextCommandSetBlipName('STRING')
+    AddTextComponentString("MÃ©cano")
+    EndTextCommandSetBlipName(BLIPLMECA)
+end)
+
+
 
 
 TriggerServerEvent('esx:getSharedObject', function(obj) ESX = obj end)
