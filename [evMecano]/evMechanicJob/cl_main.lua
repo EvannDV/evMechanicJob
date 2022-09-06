@@ -21,7 +21,7 @@ Citizen.CreateThread(function()
     SetBlipAsShortRange(BLIPMECA, true)
     BeginTextCommandSetBlipName('STRING')
     AddTextComponentString("MÃ©cano")
-    EndTextCommandSetBlipName(BLIPLMECA)
+    EndTextCommandSetBlipName(BLIPMECA)
 end)
 
 
